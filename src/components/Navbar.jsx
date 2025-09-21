@@ -53,14 +53,7 @@ const Navbar = () => {
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
-              sx={{ display: { xs: 'block', md: 'none' } }}
-              Paper={{
-                sx: {
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                }
-              }}
+              sx={{ display: { xs: 'block', md: 'flex' } }}
             >
               {pages.map((page) => {
                 const isActive = location.pathname === pageRoutes[page];
@@ -78,7 +71,13 @@ const Navbar = () => {
               })}
             </Menu>
           </Box>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: 'none', md: 'flex' },
+              justifyContent: 'center' // <-- centrado
+            }}
+          >
             {pages.map((page) => {
               const isActive = location.pathname === pageRoutes[page];
               return (
