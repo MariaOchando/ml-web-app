@@ -4,4 +4,27 @@ body {
 
 :root {
   --background-dark-color: #060B28;
+  --background-light-color: #7072FF;
+  --gradient-bg: linear-gradient( #3514AA, #000000);
 }
+
+.slide {
+  color: #ffffffff;
+}
+
+.slick-prev:before, .slick-next:before {
+  /* color: var(--background-light-color) !important; */
+  background: var(--background-light-color);
+  opacity: 1 !important;
+  height: 50px !important;
+  display: flex !important;
+  width: 50px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 5px !important;
+}
+
+.slick-prev, .slick-next {
+  border-radius: 5px !important;
+}
+
