@@ -28,7 +28,7 @@ const Navbar = () => {
     <AppBar position='static' sx={{ backgroundColor: 'var(--background-dark-color)' }}>
       <Container maxWidth='xl'>
         <Toolbar disableGutters>
-          <Avatar alt='Logo' src='src/assets/logo.png' />
+          <Avatar alt='Logo' sx={{ width: '55px', height: '55px' }} src='src/assets/logo.png' />
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size='large'

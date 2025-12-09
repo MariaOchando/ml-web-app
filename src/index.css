@@ -5,6 +5,7 @@ body {
 :root {
   --background-dark-color: #060B28;
   --background-light-color: #7072FF;
+  --icons-background-color: #1D2866;
   --gradient-bg: linear-gradient( #3514AA, #000000);
 }
 
@@ -28,3 +29,23 @@ body {
   border-radius: 5px !important;
 }
 
+.about-icons {
+  background-color: var(--icons-background-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-box {
+  width: fit-content;
+  height: fit-content;
+  border: 2px solid #AF5DF8;
+  border-radius: 10px;
+  padding: 8px;
+  display: inline-block;
+  position: relative;
+  background-color: var(--background-dark-color);
+}
